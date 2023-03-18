@@ -6,7 +6,7 @@
     "scripts": {
         "start": "nodemon app.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --mode production"
+        "build": "npm install"
     },
     "author": "",
     "license": "ISC",
