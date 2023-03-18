@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bus.css" />
+
+
+    <img src="ohoh.png" width="300px" height="300px" />
+    <img src="gif (2).gif" width="300px" height="300px" style="top: -80px;left: 0px;" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Stylesheet-->
+    <style>
+        body {
+            background-color: rgb(133 208 187);
+        }
+        
+        .backgroud {
+            background-image: url("background.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            margin: auto;
+        }
+        
+        .backgroud img {
+            position: relative;
+            top: 200px;
+        }
+        
+        .shape {
+            width: 250px;
+            height: 150px;
+        }
+        
+        .Buttons {
+            width: 40%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .Buttons button {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #121113;
+            color: white;
+        }
+    </style>
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26446.56935933222!2d-5.051392462647809!3d34.04845811726016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xda0200167cdd43d%3A0x89b0ef8e8740d496!2zVW5pdmVyc2l0w6kgRXVybyBNw6lkaXRlcnJhbsOpZW5uZSBkZSBGw6hzLCBSb3V0ZSBQcmluY2lwYWxlIEbDqHMgTWVrbsOocywgRsOocw!3m2!1d34.0449981!2d-5.0647549!4m5!1s0xd9f8b321750f0f1%3A0x15c6e8b10b9ff069!2zR2FyZSBkZSBGw6hzLCBGw6hz!3m2!1d34.0472192!2d-5.0056239!5e0!3m2!1sfr!2sma!4v1671308237205!5m2!1sfr!2sma"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+    <div id="demo-modal2" class="modal">
+        <div class="modal__content">
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26452.551185363463!2d-5.076873362677191!3d34.02927517563744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd9f8bddc4a32941%3A0x638ec0f28c5394f2!2zQkVOU09VREEsIEbDqHM!3m2!1d34.0135108!2d-5.0569413!4m5!1s0xda0200167cdd43d%3A0x89b0ef8e8740d496!2zVW5pdmVyc2l0w6kgRXVybyBNw6lkaXRlcnJhbsOpZW5uZSBkZSBGw6hzLCBSb3V0ZSBQcmluY2lwYWxlIEbDqHMgTWVrbsOocywgRsOocw!3m2!1d34.0449981!2d-5.0647549!5e0!3m2!1sfr!2sma!4v1671393205742!5m2!1sfr!2sma"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+    <div id="demo-modal3" class="modal">
+        <div class="modal__content">
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26445.77725953445!2d-5.048603262643961!3d34.05099756615091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd9ff4b66b58a411%3A0x6f9a8c500acfb39d!2zT3VlZCBGw6hzLCBGw6hz!3m2!1d34.0589288!2d-4.9960245!4m5!1s0xda0200167cdd43d%3A0x89b0ef8e8740d496!2zVW5pdmVyc2l0w6kgRXVybyBNw6lkaXRlcnJhbsOpZW5uZSBkZSBGw6hzLCBSb3V0ZSBQcmluY2lwYWxlIEbDqHMgTWVrbsOocywgRsOocw!3m2!1d34.0449981!2d-5.0647549!5e0!3m2!1sfr!2sma!4v1671393432191!5m2!1sfr!2sma"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+</head>
+
+<body>
+
+    <section>
+        <h1>Bus</h1>
+
+        <div class="tbl-header">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date depart</th>
+                        <th>Date arrivée</th>
+                        <th>Ligne</th>
+                        <th>Matricule</th>
+                        <th>Prix</th>
+                        <th>Reservation et localisation</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>18:30</td>
+                        <td>19:15</td>
+                        <td>Gare--Euromed</td>
+                        <td>M20202</td>
+                        <td>20 DH</td>
+                        <td>
+                            <a href="#demo-modal"><button  class="btn">maps</button></a>
+                            <a href="/reserverbus"><button  class="btn">Reserver</button></a>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>07:00</td>
+                        <td>07:30</td>
+                        <td>bensouda--Euromed</td>
+                        <td>M12020</td>
+                        <td>10 DH</td>
+                        <td>
+                            <a href="#demo-modal2"><button  class="btn">maps</button></a>
+                            <a href="/reserverbus"><button  class="btn">Reserver</button></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07:30</td>
+                        <td>07:45</td>
+                        <td>ouad Fes--Euromed</td>
+                        <td>M11111</td>
+                        <td>8 DH</td>
+                        <td>
+                            <a href="#demo-modal3"><button  class="btn">maps</button></a>
+                            <a href="/reserverbus"><button  class="btn">Reserver</button></a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
